@@ -1,0 +1,9 @@
+2023-06-20 14:19:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS messages ( id VARCHAR(60) DEFAULT [*]PRIMARY KEY, text VARCHAR NOT NULL )"; expected "ON NULL, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+CREATE TABLE IF NOT EXISTS messages ( id VARCHAR(60) DEFAULT PRIMARY KEY, text VARCHAR NOT NULL ) [42001-214]
+2023-06-20 14:29:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MESSAGES" already exists; SQL statement:
+CREATE TABLE messages ( id VARCHAR(60) DEFAULT RANDOM_UUID() PRIMARY KEY, text VARCHAR NOT NULL ) [42101-214]
+2023-06-20 14:29:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MESSAGES" already exists; SQL statement:
+CREATE TABLE messages ( id VARCHAR(60) DEFAULT RANDOM_UUID() PRIMARY KEY, text VARCHAR NOT NULL ) [42101-214]
